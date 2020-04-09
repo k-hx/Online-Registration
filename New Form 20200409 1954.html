@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEW 网上报名 Online Registration</title>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="New style.css">
+	<script type="text/javascript" src="Online Registration.js"></script>
+</head>
+<body>
+	<div id="outer-container">
+		<!--Title-->
+		<div id="title">
+			<h1>网上报名<br>Online Registration</h1>
+			<div id="instruction-en">
+				<p>Instructions:</p>
+				<ol>
+					<li>This form contains five (5) parts, please fill out this form before submission.</li>
+					<li>The required fields are marked in red asterisk (<span class="red">*</span>).</li>
+					<li>Kindly please check and make sure contact informations are <span class="bold">correct</span>, our staff will use these information to get in touch with you.</li>
+					<li>No amendment is allowed after you submit your application.</li>
+				</ol>	
+			</div>
+
+			<div id="instruction-ch">
+				<p>注意事项：</p>
+				<ol>
+					<li>这个报名表格共有五大项目，请仔细填写。</li>
+					<li>必填资料已被标上红色星号（<span class="red">*</span>）。</li>
+					<li>我们将会使用您所提供的联络方式与您联络，请确保联络资料<span class="bold">正确无误。</span></li>
+					<li>表格提交后将无法再修改所提交的资料。</li>
+				</ol>
+			</div>	
+		</div>
+
+		<!-- 1. Intake and choices -->
+		<div id="one" class="forms">
+			<h2>1. 入学学期 & 资料 - Intake & choices</h2>
+			<div class="content">
+				<div id="part-1">
+					<h3>申请入学梯次 - Intake and programme</h3>
+					<p>
+						请选择入学年份和入学梯次。
+						<br>
+						Please select intake year and intake.
+					</p>
+
+					<div class="div-item">
+						<span class="item">入学年份与梯次<span class="red">*</span><br>Year/Intake</span>
+						<label for="intake-year" class="label-radio"><input type="radio" name="intake-year" id="intake-year" required>&nbsp;2020/May</label>
+					</div>
+				</div>
+
+				<div id="part-2">
+					<h3>申请科系 - Choice of Programme</h3>
+					<div id="three-choices">
+						<div class="choices">
+							<label class="item">第一志愿<span class="red">*</span><br>1st Choice</label>
+							<select>
+								<option>请选择 - Click to choose</option>
+								<option>BCP - Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学（荣誉）学士课程</option>
+
+								<option>BCS - Bachelor in Information Technology (Cyber Security) with Honours - 资讯工艺（数码保安）荣誉学士课程</option>
+
+								<option>DID - Diploma In Interior Design - 室内设计专业文凭课程</option>
+							</select>
+						</div>
+
+						<div class="choices">
+							<label class="item">第二志愿<span class="red">*</span><br>2nd Choice</label>
+							<select>
+								<option>请选择 - Click to choose</option>
+								<option>BCP - Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学（荣誉）学士课程</option>
+
+								<option>BCS - Bachelor in Information Technology (Cyber Security) with Honours - 资讯工艺（数码保安）荣誉学士课程</option>
+
+								<option>DID - Diploma In Interior Design - 室内设计专业文凭课程</option>
+							</select>
+						</div>
+
+						<div class="choices">
+							<label class="item">第三志愿<span class="red">*</span><br>3rd Choice</label>
+							<select>
+								<option>请选择 - Click to choose</option>
+								<option>BCP - Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学（荣誉）学士课程</option>
+
+								<option>BCS - Bachelor in Information Technology (Cyber Security) with Honours - 资讯工艺（数码保安）荣誉学士课程</option>
+
+								<option>DID - Diploma In Interior Design - 室内设计专业文凭课程</option>
+							</select>
+						</div>
+					</div>					
+				</div>
+
+				<div id="part-3">
+					<h3>申请住宿 - Hostel</h3>
+					<div class="div-item">	
+						<label class="item" for="hostel">申请住宿<span class="red">*</span><br>Hostel</label>
+						<label class="label-radio" for="yes-hostel"><input type="radio" name="hostel" id="yes-hostel">&nbsp;是 Yes</label>
+						<label class="label-radio" for="no-hostel"><input type="radio" name="hostel" id="no-hostel">&nbsp;否 No</label>
+					</div>
+				</div>
+
+				<div id="part-4">
+					<h3>奖贷申请 - Scholarship</h3>
+					<div class="div-item">
+						<label class="item" for="scholarship">奖贷申请<span class="red">*</span><br>Scholarship</label>
+						<select>
+							<option>无 - None</option>
+							<option>学优生奖学金 - Excellent Students Full Scholarship</option>
+							<option>多元文化奖学金 - Multi-Cultural Scholarship</option>
+							<option>新生奖学金 - New Student Scholarship</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 2. 个人资料 - Personal Information -->
+		<div id="two" class="forms">
+			<h2>2. 个人资料 - Personal Information</h2>
+			<div class="content">
+				<div class="div-item">
+					<label class="item">中文姓名<br>Chinese name</label>
+					<input type="text" name="name" id="name-ch" class="input-field">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="name-en">英文姓名<span class="red">*</span><br>English name</label>
+					<input type="text" name="name-en" id="name-en" class="input-field">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="nationality">性别<span class="red">*</span><br>Gender</label>
+					<label for="female"><input type="radio" name="gender" id="female">&nbsp;女 Female</label>
+					<label for="male"><input type="radio" name="gender" id="male">&nbsp;男 Male</label>
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="birthdate">出生日期<span class="red">*</span><br>Date of Birth</label>
+					<input type="date" name="birthdate" id="birthdate" class="input-field">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="nationality">国籍<span class="red">*</span><br>Nationality</label>
+					<select>
+						<option>请选择 - Click to choose</option>
+						<option selected>马来西亚 - MALAYSIAN</option>
+						
+					</select>
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="nric-no">身份证件号<span class="red">*</span><br>NRIC No.</label>
+					<input type="text" name="nric-no" id="nric-no" class="input-field" placeholder="000000-00-0000">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="race">种族<span class="red">*</span><br>Race</label>
+					<select>
+						<option>请选择 - Click to choose</option>
+						<option>MALAY</option>
+						<option>CHINESE</option>
+						<option>INDIAN</option>
+						<option>OTHERS</option>
+					</select>
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="religion">宗教<span class="red">*</span><br>Religion</label>
+					<select>
+						<option>请选择 - Click to choose</option>
+						<option>无 - None</option>
+						<option>佛教 - Buddhism</option>
+						<option>道教 - Taoism</option>
+						<option>基督教 - Christianity</option>
+						<option>天主教 - Catholic</option>
+						<option>其他 - Others</option>
+					</select>
+				</div>
+
+				<div class="div-item">
+					<label for="house-phone" class="item">住家电话<br>House phone number</label>
+					<input type="texts" name="" class="input-field">
+				</div>
+
+				<div class="div-item">
+					<label for="mobile-phone" class="item">手提电话<span class="red">*</span><br>Mobile number</label>
+					<input type="text" name="mobile-phone" id="mobile-phone" class="input-field">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="email">电邮<span class="red">*</span><br>E-mail</label>
+					<input type="email" name="email" id="email" class="input-field" placeholder="example@email.com">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="address">住家地址<span class="red">*</span><br>Address</label>
+					<input type="text" name="address" id="address" class="input-field">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="postcode">邮编<span class="red">*</span><br>Postcode</label>
+					<input type="text" name="postcode" id="postcode" class="input-field">
+				</div>
+
+				<div class="div-item">
+					<label class="item" for="state">州属<span class="red">*</span><br>State</label>
+					<select>
+						<option>请选择 - Click to choose</option>
+						<option>JOHOR</option>
+						<option>KEDAH</option>
+						<option>KELANTAN</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<!-- 3. 家庭资料 - Family details -->
+		<div id="three" class="forms">
+			<h2>3. 家庭资料 - Family details</h2>
+			<div class="content">
+				<div class="div-item">
+					<label for="guardian" class="item">监护人<span class="red">*</span><br>Guardian</label>
+					<label for="father" class="label-radio"><input type="radio" name="guardian" id="father">父亲 Father</label>
+					<label for="mother" class="label-radio"><input type="radio" name="guardian" id="mother">母亲 Mother </label>
+					<label for="guardian-not-parent" class="label-radio"><input type="radio" name="guardian" id="guardian-not-parent">父母非监护人 Guardian not parent</label>
+				</div>
+
+				<div class="small-form">
+					<p>监护人 - Guardian</p>
+					<div class="content">
+						<div class="div-item">
+							<label for="father-name-ch" class="item">中文姓名<br>Chinese name</label>
+							<input type="text" name="father-name-ch" id="father-name-ch" class="input-field">
+						</div>
+
+						<div class="div-item">
+							<label for="father-name-en" class="item">英文姓名<span class="red">*</span><br>English name</label>
+							<input type="text" name="father-name-ch" id="father-name-ch" class="input-field">
+						</div>
+
+						<div class="div-item">
+							<label for="father-ic-no" class="item">身份证号<span class="red">*</span><br>Identity Card No.</label>
+							<input type="text" name="father-ic-no" id="ic-no" class="input-field">
+						</div>
+
+						<div class="div-item">
+							<label for="father-phone-no" class="item">联络电话<span class="red">*</span><br>Phone number</label>
+							<input type="text" name="father-phone-no" id="father-phone-no" class="input-field">
+						</div>
+					</div>
+				</div>
+
+				<div class="div-item">
+					<label for="income" class="item">家庭年收入<span class="red">*</span><br>Household annual income</label>
+					<select>
+						<option>请选择 - Click to choose</option>
+						<option>Less than RM 10,000</option>
+						<option>RM 10,000 to RM 29,999</option>
+						<option>RM 20,000 to RM 49,999</option>
+						<option>RM 50,000 to RM 69,999</option>
+						<option>RM 70,000 or more</option>
+					</select>
+				</div>				
+			</div>
+		</div>
+
+		<!--4. 学历 - Academic qualification-->
+		<div id="four" class="forms">
+			<h2>4. 学历 - Academic qualification</h2>
+			<div class="content">
+				<div class="div-item" id="secondary-school">
+					<label class="item">中学<span class="red">*</span><br>Secondary school</label>
+
+					<select id="secondary-state">
+						<option>请选择 - Click to choose</option>
+						<option>JOHOR</option>
+						<option>KEDAH</option>
+						<option>KELANTAN</option>
+					</select>
+
+					<select id="secondary-school-name">
+						<option>请选择 - Click to choose</option>
+					</select>
+
+					<select id="secondary-school-year">
+						<option>请选择 - Click to choose</option>
+						<option selected>2020</option>
+						<option>2019</option>
+						<option>2018</option>
+						<option>2017</option>
+					</select>
+				</div>
+
+				<div class="div-item" id="higher-institution">
+					<label class="item" for="higher-institution">大专<br>Higher Instituition</label>
+
+					<select id="higher-institution-state">
+						<option>请选择 - Click to choose</option>
+						<option>JOHOR</option>
+						<option>KEDAH</option>
+						<option>KELANTAN</option>
+					</select>
+
+					<input type="text" name="higher-institution-name" class="input-field" id="higher-institution-name" placeholder="请输入学校名字 Please enter institute name">
+
+					<select id="higher-institution-year">
+						<option>请选择 - Click to choose</option>
+						<option>2019</option>
+						<option>2018</option>
+						<option>2017</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<!--5. 入学成绩 - Certificate & Grades-->
+		<div id="five" class="forms">
+			<h2>5. 入学成绩 - Certificate & Grades</h2>
+			<div class="content">
+				<div class="div-item">
+					<label class="item">证书名称<span class="red">*</span><br>Certificate</label>
+
+					<select id="certificate">
+						<option>请选择 - Click to choose</option>
+						<option>SPM</option>
+						<option>O Level</option>
+						<option>高中/技术科统考 - UEC (Senior Middle Level/Technical Subject)</option>
+						<option>STPM</option>
+						<option>A Level</option>
+						<option>其他 - Other</option>
+					</select>
+
+					<div id="subjects">
+						<p>最好五科 The best five subjects<span class="red">*</span></p>
+
+						<table>
+							<tr>
+								<th></th>
+								<th>科目 Subject</th>
+								<th>等级 Grade</th>
+							</tr>
+
+							<tr>
+								<td>1.</td>
+								<td>
+									<select class="select-subject">
+										<option>请选择 - Click to choose</option>
+										<option>Bahasa Cina</option>
+										<option>Bahasa Inggeris</option>
+										<option>Bahasa Melayu</option>
+										<option>Bahasa Tamil</option>
+										<option>Bible knowledge</option>
+										<option>Biologi</option>
+										<option>Ekonomi</option>
+										<option>Ekonomi Asas</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td>2.</td>
+								<td>
+									<select class="select-subject">
+										<option>请选择 - Click to choose</option>
+										<option>Bahasa Cina</option>
+										<option>Bahasa Inggeris</option>
+										<option>Bahasa Melayu</option>
+										<option>Bahasa Tamil</option>
+										<option>Bible knowledge</option>
+										<option>Biologi</option>
+										<option>Ekonomi</option>
+										<option>Ekonomi Asas</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td>3.</td>
+								<td>
+									<select class="select-subject">
+										<option>请选择 - Click to choose</option>
+										<option>Bahasa Cina</option>
+										<option>Bahasa Inggeris</option>
+										<option>Bahasa Melayu</option>
+										<option>Bahasa Tamil</option>
+										<option>Bible knowledge</option>
+										<option>Biologi</option>
+										<option>Ekonomi</option>
+										<option>Ekonomi Asas</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td>4.</td>
+								<td>
+									<select class="select-subject">
+										<option>请选择 - Click to choose</option>
+										<option>Bahasa Cina</option>
+										<option>Bahasa Inggeris</option>
+										<option>Bahasa Melayu</option>
+										<option>Bahasa Tamil</option>
+										<option>Bible knowledge</option>
+										<option>Biologi</option>
+										<option>Ekonomi</option>
+										<option>Ekonomi Asas</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td>5.</td>
+								<td>
+									<select class="select-subject">
+										<option>请选择 - Click to choose</option>
+										<option>Bahasa Cina</option>
+										<option>Bahasa Inggeris</option>
+										<option>Bahasa Melayu</option>
+										<option>Bahasa Tamil</option>
+										<option>Bible knowledge</option>
+										<option>Biologi</option>
+										<option>Ekonomi</option>
+										<option>Ekonomi Asas</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div id="three-subjects">
+						<p>请您输入用来申请入学的成绩 Please enter the score you used to apply for admission<span class="red">*</span></p>
+
+						<table>
+							<tr>
+								<th>科目 Subject</th>
+								<th>程度 Qualification</th>
+								<th>等级 Grade</th>
+							</tr>
+
+							<tr>
+								<td>中文 Chinese</td>
+								<td>
+									<select class="select-qualification">
+										<option>请选择 - Click to choose</option>
+										<option>UPSR</option>
+										<option>PMR/PT3</option>
+										<option>SPM</option>
+										<option>O Level</option>
+										<option>UEC</option>
+										<option>STPM</option>
+										<option>A Level</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td>国文 Bahasa Malaysia</td>
+								<td>
+									<select class="select-qualification">
+										<option>请选择 - Click to choose</option>
+										<option>UPSR</option>
+										<option>PMR/PT3</option>
+										<option>SPM</option>
+										<option>O Level</option>
+										<option>UEC</option>
+										<option>STPM</option>
+										<option>A Level</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td>英文 English</td>
+								<td>
+									<select class="select-qualification">
+										<option>请选择 - Click to choose</option>
+										<option>UPSR</option>
+										<option>PMR/PT3</option>
+										<option>SPM</option>
+										<option>O Level</option>
+										<option>UEC</option>
+										<option>STPM</option>
+										<option>A Level</option>
+									</select>					
+								</td>
+
+								<td>
+									<select class="select-grade">
+										<option>请选择 - Click to choose</option>
+										<option>1A</option>
+										<option>2A</option>
+										<option>3B</option>
+										<option>4B</option>
+										<option>5C</option>
+										<option>6C</option>
+										<option>7D</option>
+										<option>8E</option>
+										<option>9G</option>
+									</select>
+								</td>
+							</tr>
+
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<button type="submit">提交 SUBMIT</button>
+</body>
+</html>
