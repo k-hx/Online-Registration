@@ -1,0 +1,342 @@
+html，body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#outer-container{
+	width: 70%;
+	margin: auto;
+	font-family: "Microsoft JhengHei", "微软正黑体", "华文细黑", "宋体", "华文仿宋", "华文宋体";
+
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.red{
+	color: red;
+}
+
+h1{
+	text-align: center;
+}
+
+div#instruction-en p,
+div#instruction-ch p{
+	margin: 0;
+}
+
+div#instruction-en ol,
+div#instruction-ch ol{
+	margin-top: 0;
+}
+
+/*on the top of the page*/
+div#title{
+	margin-bottom: 20px;
+	border-bottom: 1.5px solid #ededed;
+}
+
+/*title for each part*/
+div.forms h2{
+	margin: 0;
+	padding: 16px;
+	font-size: 18.6px;
+	color: white;
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+}
+
+/*background color for each title*/
+div#one h2{
+	background-color: #fa5555;
+}
+
+div#two h2{
+	background-color: #fa8c55;
+}
+
+div#three h2,
+div.small-form p{
+	background-color: #65b52f;
+}
+
+div#four h2{
+	background-color: #29b395;
+}
+
+div#five h2{
+	background-color: #479db5;
+}
+
+/*each part*/
+div.content{
+	padding: 10px 15px;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+}
+
+/*border for each part*/
+div#one .content{
+	border: 2px solid #fa5555;
+}
+div#two .content{
+	border: 2px solid #fa8c55;
+}
+div#three .content{
+	border: 2px solid #65b52f;
+}
+div#four .content{
+	border: 2px solid #29b395;
+}
+div#five .content{
+	border: 2px solid #479db5;
+}
+
+/*Subtitle in every parts*/
+div.content h3{
+	font-weight: normal;
+	padding: 7px;
+	margin: 0;
+	font-size: 18px;
+}
+
+/*Small title in every parts*/
+.item{
+	display: inline-block;
+	text-align: right;
+	width: 120px;
+	margin: 10px 15px 10px 0;
+	font-size: 14px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+label.label-radio,
+select{
+	vertical-align: middle;
+}
+
+label.label-radio{
+	padding: 10px;
+	font-size: 10px;
+}
+
+/*when hover radio label*/
+label.label-radio:hover{
+	cursor: pointer;
+}
+
+/*padding for each part in Intake and Choices*/
+div#part-1,
+div#part-2,
+div#part-3,
+div#part-4{
+	padding: 10px;
+}
+
+/*Intake and choices - bottom line*/
+div#part-1,
+div#part-2,
+div#part-3{
+	border-bottom: 1px solid #ddd;
+}
+
+/*padding for div of choice of programme*/
+div.choices{
+	padding: 7px;
+}
+
+/*boxes of select*/
+select{
+	height: 40px;
+	width: 81.7%;
+	border-radius: 0.4em;
+	padding: 5px;
+	border: 1.3px solid #ddd;
+	font-family: "Microsoft JhengHei", "微软正黑体", "华文细黑", "宋体", "华文仿宋", "华文宋体";
+	color: #555;
+}
+
+/*boxes for text input*/
+.input-field{
+	height: 23px;
+	width: 80%;
+	border-radius: 0.4em;
+	padding: 5px;
+	border: 1.3px solid #ddd;
+	font-family: "Microsoft JhengHei", "微软正黑体", "华文细黑", "宋体", "华文仿宋", "华文宋体";
+}
+
+/*texts in intake and choices*/
+.forms p{
+	margin: 0;
+	padding: 7px;
+	font-size: 15px;
+}
+
+div.forms{
+	margin-bottom: 20px;
+}
+
+/*small form (guardian)*/ 
+div.small-form {
+	margin: 10px;
+}
+
+/*title in small form*/
+div.small-form p{
+	margin: 0;
+	padding: 16px;
+	font-size: 15px;
+	color: white;
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+}
+
+/*academic qualification*/
+div#four div#secondary-school select#secondary-state{
+	width: 20%;
+	margin: 0 10px;
+}
+div#four div#secondary-school select#secondary-school-name{
+	width: 43%	;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+div#four div#secondary-school select#secondary-school-year{
+	width: 10%;
+	margin: 0 10px;
+}
+div#four div#higher-institution select#higher-institution-state{
+	width: 20%	;
+	margin: 0 10px;
+}
+div#four div#higher-institution input#higher-institution-name{
+	width: 41.5%	;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+div#four div#higher-institution select#higher-institution-year{
+	width: 10%;
+	margin: 0 10px;
+}
+
+/*best five subjects*/
+div#five #subjects,
+div#five #three-subjects{
+	margin-left: 130px;
+	padding: 20px;
+}
+
+/*move table heading to left*/
+th{
+	text-align: left;
+}
+
+/*padding for table heading and table data*/
+th,
+td{
+	padding: 5px;
+}
+
+/*width for selection of best five subjects*/
+div#five div#subjects select.select-subject{
+	width: 100%;
+}
+
+/*width for grade of the best five subjects*/
+div#five div#subjects select.select-grade{
+	width: 100%;
+}
+
+div#five select.select-qualification{
+	width: 100%;
+}
+
+button{
+	padding: 15px 20px;
+	border-radius: .5em;
+	border: none;
+	background-color: #a16499;
+	color: white;
+	display: block;
+	margin: 20px auto;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+/*----------------------------------------------*/
+
+@media screen and (max-width: 1184px){
+	#outer-container{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 959px){
+	.item{
+		text-align: left;
+		display: block;
+		margin-left: 10px;
+		width: max-content;
+	}
+
+	.input-field{
+		width: 95%;
+	}
+
+	select{
+		width: 96.5%;
+	}
+
+	div#five #subjects, div#five #three-subjects{
+		margin-left: 0;
+	}
+
+	div#four div#secondary-school select#secondary-state{
+		width: 30%;
+	}
+
+	div#four div#secondary-school select#secondary-school-name{
+		width: 50%;
+	}
+
+	div#four div#higher-institution select#higher-institution-state{
+		width: 30%;
+	}
+
+	div#four div#higher-institution input#higher-institution-name{
+		width: 48.5%;
+	}
+}
+
+@media screen and (max-width: 842px) {
+	div#four div#secondary-school select#secondary-school-name{
+		width: 46%;
+	}
+
+	div#four div#higher-institution input#higher-institution-name{
+		width: 44.5%;
+	}
+}
+
+@media screen and (max-width: 788px) {
+	div#four div#secondary-school select#secondary-state,
+	div#four div#secondary-school select#secondary-school-name,
+	div#four div#secondary-school select#secondary-school-year,
+	div#four div#higher-institution select#higher-institution-state,
+	div#four div#higher-institution select#higher-institution-year {
+		width: 95%;
+	}
+
+
+	div#four div#higher-institution input#higher-institution-name{
+		width: 92.5%;
+	}
+}
