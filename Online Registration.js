@@ -124,9 +124,10 @@ function formValidation() {
 
     if(intakeYear_validation(May2020)){
 	if(choice_validation(choice1)) {
-	if (choice_validation(choice2)) {
-	if (choice_validation(choice3)){
+	if(choice_validation(choice2)) {
+	if(choice_validation(choice3)){
 	if(hostel_validation(hostel)) {
+	if(scholarship_validation(scholarship)) {
 	if(nameEn_validation(nameEn)) {
 	if(allLetter_validation(nameEn)) {
 	if(gender_validation(gender)) {
@@ -158,6 +159,7 @@ function formValidation() {
  	}
  	}
  	}
+	}
 	}
 	}
 	}
@@ -549,3 +551,12 @@ function higherInstitution_validation(state,name,year) {
 		
 }
 
+function scholarship_validation(scholarship) {
+	if(scholarship.value == "Default") {
+		alert("Please select if you want to apply for any scholarship. Thank you.");
+		scholarship.focus();
+		return false;
+	} else {
+		return true;
+	}
+}
