@@ -19,7 +19,7 @@
 					<li>The required fields are marked in red asterisk (<span class="red">*</span>).</li>
 					<li>Kindly please check and make sure contact informations are <span class="bold">correct</span>, our staff will use these information to get in touch with you.</li>
 					<li>No amendment is allowed after you submit your application.</li>
-				</ol>	
+				</ol>
 			</div>
 
 			<div id="instruction-ch">
@@ -30,10 +30,10 @@
 					<li>我们将会使用您所提供的联络方式与您联络，请确保联络资料<span class="bold">正确无误。</span></li>
 					<li>表格提交后将无法再修改所提交的资料。</li>
 				</ol>
-			</div>	
+			</div>
 		</div>
 
-		<form id="registration" name="registration" method="post" onsubmit="return formValidation()">
+		<form id="registration" name="registration" action="index.html" method="post" onsubmit="return formValidation()">
 			<!-- 1. Intake and choices -->
 			<div id="one" class="forms">
 				<h2>1. 入学学期 & 资料 - Intake & choices</h2>
@@ -93,12 +93,12 @@
 									<option value="DID">DID - Diploma In Interior Design - 室内设计专业文凭课程</option>
 								</select>
 							</div>
-						</div>					
+						</div>
 					</div>
 
 					<div id="part-3">
 						<h3>申请住宿 - Hostel</h3>
-						<div class="div-item">	
+						<div class="div-item">
 							<label class="item" for="hostel">申请住宿<span class="red">*</span><br>Hostel</label>
 							<label class="label-radio" for="yes-hostel"><input type="radio" name="hostel" id="yes-hostel" required>&nbsp;是 Yes</label>
 							<label class="label-radio" for="no-hostel"><input type="radio" name="hostel" id="no-hostel" required>&nbsp;否 No</label>
@@ -110,7 +110,8 @@
 						<div class="div-item">
 							<label class="item" for="scholarship">奖贷申请<span class="red">*</span><br>Scholarship</label>
 							<select name="scholarship">
-								<option selected value="Default">无 - None</option>
+								<option selected value="Default">请选择 - Click to choose</option>
+								<option value="none">无 - None</option>
 								<option value="ESFS">学优生奖学金 - Excellent Students Full Scholarship</option>
 								<option value="MCS">多元文化奖学金 - Multi-Cultural Scholarship</option>
 								<option value="NSS">新生奖学金 - New Student Scholarship</option>
@@ -275,7 +276,7 @@
 							<option value="70">RM 50,000 to RM 69,999</option>
 							<option value="more">RM 70,000 or more</option>
 						</select>
-					</div>				
+					</div>
 				</div>
 			</div>
 
@@ -446,7 +447,7 @@
 											<option value="Biologi">Biologi</option>
 											<option value="Ekonomi">Ekonomi</option>
 											<option value="Ekonomi Asas">Ekonomi Asas</option>
-										</select>					
+										</select>
 									</td>
 
 									<td>
@@ -478,7 +479,7 @@
 											<option value="Biologi">Biologi</option>
 											<option value="Ekonomi">Ekonomi</option>
 											<option value="Ekonomi Asas">Ekonomi Asas</option>
-										</select>				
+										</select>
 									</td>
 
 									<td>
@@ -510,7 +511,7 @@
 											<option value="Biologi">Biologi</option>
 											<option value="Ekonomi">Ekonomi</option>
 											<option value="Ekonomi Asas">Ekonomi Asas</option>
-										</select>					
+										</select>
 									</td>
 
 									<td>
@@ -542,7 +543,7 @@
 											<option value="Biologi">Biologi</option>
 											<option value="Ekonomi">Ekonomi</option>
 											<option value="Ekonomi Asas">Ekonomi Asas</option>
-										</select>					
+										</select>
 									</td>
 
 									<td>
@@ -574,7 +575,7 @@
 											<option value="Biologi">Biologi</option>
 											<option value="Ekonomi">Ekonomi</option>
 											<option value="Ekonomi Asas">Ekonomi Asas</option>
-										</select>					
+										</select>
 									</td>
 
 									<td>
@@ -617,7 +618,7 @@
 											<option value="UEC">UEC</option>
 											<option value="STPM">STPM</option>
 											<option value="A-Level">A Level</option>
-										</select>					
+										</select>
 									</td>
 
 									<td>
@@ -648,7 +649,7 @@
 											<option value="UEC">UEC</option>
 											<option value="STPM">STPM</option>
 											<option value="A-Level">A Level</option>
-										</select>				
+										</select>
 									</td>
 
 									<td>
@@ -679,7 +680,7 @@
 											<option value="UEC">UEC</option>
 											<option value="STPM">STPM</option>
 											<option value="A-Level">A Level</option>
-										</select>				
+										</select>
 									</td>
 
 									<td>
@@ -710,6 +711,6 @@
 		</form>
 	</div>
 
-	
+
 </body>
 </html>
