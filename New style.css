@@ -241,6 +241,7 @@ th{
 th,
 td{
 	padding: 5px;
+	font-size: 15px;
 }
 
 /*width for selection of best five subjects*/
@@ -265,10 +266,17 @@ button{
 	color: white;
 	display: block;
 	margin: 20px auto;
+	font-size: 15px;
 }
 
 button:hover{
 	cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 /*----------------------------------------------*/
