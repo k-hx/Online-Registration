@@ -329,7 +329,7 @@ function nricNo_validation(nricNo) {
 		nricNo.focus();
 		return false;
 	} else if(nricNo.value.length > 12 || nricNo.value.length < 12) {
-		alert("Please fill in the NRIC no. correctly. Thank you.");
+		alert("Please fill in the NRIC no. correctly (without the dash). Thank you.");
 		nricNo.focus();
 		return false;
 	} else {
